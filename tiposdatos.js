@@ -10,3 +10,4 @@ mi_booleano = false;
 console.log(mi_booleano);
 const mi_constante = 19;
 mi_constante = 20;
+mi_constante = 20;
