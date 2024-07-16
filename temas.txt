@@ -1,0 +1,23 @@
+Operadores de Desplazamiento:
+Los operadores de desplazamiento se utilizan para mover los bits de un número hacia la izquierda o hacia la derecha.
+
+
+
+Hay dos tipos principales de operadores de desplazamiento:
+Desplazamiento a la izquierda (<<): Este operador desplaza los bits hacia la izquierda. Por ejemplo, si tienes el número binario 1010 y aplicas 1010 << 2, obtendrás 101000.
+Desplazamiento a la derecha (>>): Este operador desplaza los bits hacia la derecha. Por ejemplo, si tienes el número binario 1010 y aplicas 1010 >> 1, obtendrás 101.
+Estos operadores son útiles para optimizar el rendimiento en ciertas situaciones, como en cálculos con números grandes o en manipulación de datos binarios.
+Operadores de Desplazamiento con Asignación:
+Los operadores de desplazamiento con asignación combinan el desplazamiento con la asignación de valores a una variable.
+
+
+
+
+Los operadores de desplazamiento con asignación incluyen <<=, >>=, y >>>=.
+Ejemplos:
+x <<= 2: Desplaza los bits de x hacia la izquierda en 2 posiciones y asigna el resultado a x.
+y >>= 1: Desplaza los bits de y hacia la derecha en 1 posición y asigna el resultado a y.
+z >>>= 3: Desplaza los bits de z hacia la derecha en 3 posiciones (rellenando con ceros a la izquierda) y asigna el resultado a z.
+
+
+
