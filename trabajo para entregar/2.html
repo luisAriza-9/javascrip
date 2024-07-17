@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrar Palabras</title>
+</head>
+<body>
+    <h1>Encontrar Palabras</h1>
+    <textarea id="text" placeholder="Introduce un texto"></textarea>
+    <button onclick="findWords()">Encontrar Palabras</button>
+    <p id="result"></p>
+
+    <script>
+        function findWords() {
+            const text = document.getElementById('text').value;
+            const re = /\b\w+\b/g;
+            const words = text.match(re);
+            document.getElementById('result').innerText = words ? words.join(", ") : "No se encontraron palabras";
+        }
+    </script>
+</body>
+</html>

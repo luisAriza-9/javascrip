@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Número de Teléfono</title>
+</head>
+<body>
+    <h1>Validar Número de Teléfono</h1>
+    <input type="text" id="phone" placeholder="Introduce tu número de teléfono">
+    <button onclick="validatePhone()">Validar</button>
+    <p id="result"></p>
+
+    <script>
+        function validatePhone() {
+            const phone = document.getElementById('phone').value;
+            const re = /^\d{3}-\d{3}-\d{4}$/;
+            const result = re.test(phone) ? "Número válido" : "Número inválido";
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>

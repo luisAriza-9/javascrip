@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraer Números</title>
+</head>
+<body>
+    <h1>Extraer Números</h1>
+    <textarea id="text" placeholder="Introduce un texto"></textarea>
+    <button onclick="extractNumbers()">Extraer Números</button>
+    <p id="result"></p>
+
+    <script>
+        function extractNumbers() {
+            const text = document.getElementById('text').value;
+            const re = /\d+/g;
+            const numbers = text.match(re);
+            document.getElementById('result').innerText = numbers ? numbers.join(", ") : "No se encontraron números";
+        }
+    </script>
+</body>
+</html>
