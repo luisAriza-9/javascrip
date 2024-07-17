@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "funciones"
+        "funciones",
+        "trabajo.\"@luisAriza-9"
     ]
 }
