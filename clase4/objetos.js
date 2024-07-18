@@ -59,3 +59,4 @@ function ejemploReplacer(key, value){
 }
 var gorra3 = JSON.stringify(gorra, ejemploReplacer)
 console.log(gorra3)
+
