@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🔍Validación de URL 🔍</title>
+
+<style>
+
+body {
+
+font-family: Arial, sans-serif; margin: 20px;
+
+}
+
+.container {
+
+max-width: 600px;
+
+margin: auto;
+
+}
+
+input {
+
+width: 100%;
+
+padding: 10px;
+
+margin: 10px 0;
+
+border: 1px solid #ccc;
+
+border-radius: 4px;
+
+}
+
+button {
+
+padding: 10px 20px;
+
+border: none;
+border-radius: 4px;
+background-color: rgb(252, 101, 0);
+color: lavender;
+font-size: 20px;
+}
+
+.result {
+
+margin-top: 20px;
+font-size: 10px;
+
+}
+
+
+</style>
+<body>
+
+<div class="container">
+
+<h1>Validador de URL</h1>
+
+<input type="text" id="urlInput" placeholder="Introduce una URL">
+
+<button onclick="validateUrl()">Validar URL</button>
+
+<div class="result" id="result"></div>
+
+</div>
+
+<script>
+
+function validateUrl() {
+
+const urlInput = document.getElementById('urlInput').value;
+
+const resultDiv = document.getElementById('result');
+
+if (URL.canParse(urlInput)) {
+
+resultDiv.innerHTML = `<p style="color: green;">La URL <strong>${urlInput}</strong> es válida.</p>`;
+
+} else {
+
+resultDiv.innerHTML = `<p style="color: red;">La URL <strong>${urlInput}</strong> no es válida.</p>`;
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
