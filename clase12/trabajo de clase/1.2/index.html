@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Modificado</title>
+    <style>
+        .estilo-nuevo {
+            color: azul;
+        }
+        .otro-estilo {
+            font-weight: normal;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="elementoUnico" class="estilo-nuevo">Contenido del Elemento Único</div>
+    <button id="botonAccion">Cambiar Clase</button>
+
+    <script type="text/javascript">
+        document.getElementById('botonAccion').addEventListener('click', function() {
+            var elem = document.getElementById('elementoUnico');
+            if(elem.classList.contains('estilo-nuevo')) {
+                elem.classList.replace('estilo-nuevo', 'otro-estilo');
+            } else {
+                elem.classList.replace('otro-estilo', 'estilo-nuevo');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Clases</title>
+    <style>
+        .nuevaClase1 {
+            color: red;
+        }
+        .nuevaClase2 {
+            font-size: 25px;
+        }
+        .nuevaClase3 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemento div con la clase 'nuevaClase1' -->
+    <div id="miNuevoElemento" class="nuevaClase1">Contenido Modificado</div>
+    <!-- Botón que disparará el evento para agregar clases al elemento -->
+    <button id="agregarNuevasClases">Agregar Nuevas Clases</button>
+    <script>
+        // Se añade un listener al botón con id 'agregarNuevasClases' para que ejecute una función al hacer clic
+        document.getElementById('agregarNuevasClases').addEventListener('click', function() {
+            // Se obtiene el elemento div con id 'miNuevoElemento' y se guarda en la variable 'elemento'
+            const elemento = document.getElementById('miNuevoElemento');
+            // Agregar las clases 'nuevaClase2' y 'nuevaClase3'
+            elemento.classList.add('nuevaClase2', 'nuevaClase3');
+        });
+    </script>
+</body>
+</html>

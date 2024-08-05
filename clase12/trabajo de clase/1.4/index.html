@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Modificado</title>
+    <style>
+        .estilo-nuevo {
+            color: verde;
+            margin: 20px;
+        }
+        .otro-estilo {
+            font-size: 16px;
+            background-color: amarillo;
+        }
+    </style>
+</head>
+<body>
+
+<div id="elementoModificado" class="estilo-nuevo otro-estilo">Verificar Clases</div>
+
+<button onclick="verificarClases()">Verificar Clase</button>
+
+<script>
+function verificarClases() {
+    var elemento = document.getElementById('elementoModificado');
+    
+    if (elemento.classList.contains('estilo-nuevo')) {
+        console.log('El elemento tiene la clase estilo-nuevo.');
+    } else {
+        console.log('El elemento no tiene la clase estilo-nuevo.');
+    }
+
+    if (elemento.classList.contains('otro-estilo')) {
+        console.log('El elemento tiene la clase otro-estilo.');
+    } else {
+        console.log('El elemento no tiene la clase otro-estilo.');
+    }
+}
+</script>
+
+</body>
+</html>
