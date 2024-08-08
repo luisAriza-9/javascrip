@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <button id="miBoton">Haz clic aquí</button>
+
+    <script>
+        // Selecciona el botón por su ID
+        const boton = document.getElementById('miBoton');
+
+        // Define la función que se ejecutará al hacer clic
+        function mostrarAlerta() {
+            alert("Botón clickeado");
+        }
+
+        // Asigna el atributo onclick al botón, llamando a la función mostrarAlerta
+        boton.setAttribute('onclick', 'mostrarAlerta()');
+    </script>
+</body>
+</html>
